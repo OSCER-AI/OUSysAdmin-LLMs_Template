@@ -55,3 +55,25 @@ To perform classification:
 ```bash
 python main.py --task classify --model "PubMedBERT" --data_file "path/to/your/data.csv" --output_file "predictions.csv"
 ```
+
+
+Your data file (e.g., CSV) should have a 'text' column for input and optionally a 'label' column if you want to evaluate accuracy or fine-tune.
+
+Available classification models (refer to `main.py` for exact keys):
+*   `PubMedBERT`
+*   `BERT-base-uncased`
+*   `RoBERTa-base`
+
+## Project Structure
+
+```
+.gitignore
+README.md
+requirements.txt
+main.py
+summarize.py
+classify.py
+```
+
+Feel free to contribute or suggest improvements!
+```
